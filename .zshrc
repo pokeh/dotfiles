@@ -4,6 +4,10 @@ alias ll="ls -al"
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+# go
+export GOPATH=$HOME
+export PATH="$GOPATH/bin:$PATH"
+
 # show pwd
 PROMPT="%~$ "
 
@@ -21,5 +25,5 @@ bindkey '^]' peco-src
 ### ghq + peco ###
 
 # must be at end of file
-source ~/ghq/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/src/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
