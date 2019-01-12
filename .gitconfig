@@ -1,0 +1,9 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	df = diff
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+[ghq]
+	root = ~/ghq
