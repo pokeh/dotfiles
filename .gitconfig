@@ -4,6 +4,6 @@
 	ci = commit
 	st = status
 	df = diff
-	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	tree = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%cr %Cblue(%an)%C(cyan)%d%Creset %s' --abbrev-commit --all
 [ghq]
 	root = ~/src
