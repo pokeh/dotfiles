@@ -5,5 +5,6 @@
 	st = status
 	df = diff
 	tree = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%cr %Cblue(%an)%C(cyan)%d%Creset %s' --abbrev-commit --all
+	cia = commit --amend --no-edit
 [ghq]
 	root = ~/src
