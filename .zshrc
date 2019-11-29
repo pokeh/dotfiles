@@ -1,5 +1,8 @@
 alias ll="ls -al"
 
+# git
+alias gbrd='git branch --merged | egrep -v "develop" | xargs git branch -d'
+
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
