@@ -7,10 +7,6 @@ alias gbrd='git branch --merged | egrep -v "develop" | xargs git branch -d'
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
-# go
-export GOPATH=$HOME
-export PATH="$GOPATH/bin:$PATH"
-
 # show pwd
 PROMPT="%~$ "
 
