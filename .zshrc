@@ -24,5 +24,4 @@ bindkey '^]' peco-src
 ### ghq + peco ###
 
 # must be at end of file
-source ~/src/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
