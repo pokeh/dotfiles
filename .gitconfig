@@ -8,3 +8,5 @@
 	cia = commit --amend --no-edit
 [ghq]
 	root = ~/src
+[push]
+  default = current
