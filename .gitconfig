@@ -6,6 +6,7 @@
 	df = diff
 	tree = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%cr %Cblue(%an)%C(cyan)%d%Creset %s' --abbrev-commit --all
 	cia = commit --amend --no-edit
+	first = rev-list --max-parents=0 HEAD
 [ghq]
 	root = ~/src
 [push]
