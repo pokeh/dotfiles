@@ -7,6 +7,12 @@ alias gbrd='git branch --merged | egrep -v "develop" | xargs git branch -d'
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+### kubectl shell autocompletion https://kubernetes.io/docs/tasks/tools/install-kubectl/#enabling-shell-autocompletion ###
+autoload -Uz compinit
+compinit
+source <(kubectl completion zsh)
+### kubectl shell autocompletion ###
+
 ### https://www.themoderncoder.com/add-git-branch-information-to-your-zsh-prompt/ ###
 # Load version control information
 autoload -Uz vcs_info
