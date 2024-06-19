@@ -1,16 +1,23 @@
 [alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
-	df = diff
-	tree = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%cr %Cblue(%an)%C(cyan)%d%Creset %s' --abbrev-commit --all
-	cia = commit --amend --no-edit
-	cian = commit --amend --no-edit --date=now
-	first = rev-list --max-parents=0 HEAD
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+        df = diff
+        tree = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%cr %Cblue(%an)%C(cyan)%d%Creset %s' --abbrev-commit --all
+        cia = commit --amend --no-edit
+        cian = commit --amend --no-edit --date=now
+        first = rev-list --max-parents=0 HEAD
+        sw = switch
+        rs = restore
 [ghq]
-	root = ~/src
+        root = ~/src
 [push]
-	default = current
+        default = current
 [core]
-	excludesfile = ~/.gitignore
+        excludesfile = ~/.gitignore
+        autocrlf = input
+        whitespace = cr-at-eol
+[user]
+        name = Chiyo T N
+        email = chiyo.nishio@gmail.com
